@@ -23,6 +23,11 @@ export const Header = () => {
   return (
     <header className="h-16 bg-[#0a0c10] border-b border-white/[0.05] flex items-center justify-between px-6 sticky top-0 z-40 shadow-sm shadow-black/20">
       <div className="flex items-center gap-4">
+        <img
+          src="/logo.png"
+          alt="Ruijie"
+          className="h-8 w-auto object-contain"
+        />
         <h1 className="text-sm font-black text-white pr-4 border-r border-white/5 uppercase tracking-[0.2em]">
           RUIJIE <span className="text-primary font-light">0-CODE</span>
         </h1>
