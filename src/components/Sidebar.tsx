@@ -35,9 +35,19 @@ export const Sidebar = () => {
     <aside className="w-20 bg-[#0a0a0a] flex flex-col h-screen fixed left-0 top-0 z-50 shadow-2xl shadow-black/50">
       <div className="h-20 flex items-center justify-center border-b border-white/5">
         <div className="flex items-center justify-center p-2 bg-white rounded-xl m-3 shadow-lg shadow-black/50 border border-white/10 opacity-90 hover:opacity-100 transition-opacity group">
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-            RJ
-          </div>
+          <img
+            src="/input_file_0.png"
+            alt="Ruijie"
+            className="w-12 h-auto object-contain transition-transform group-hover:scale-105"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              const fallback = document.createElement('div');
+              fallback.className = 'w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl';
+              fallback.textContent = 'RJ';
+              e.currentTarget.parentElement?.appendChild(fallback);
+            }}
+          />
         </div>
       </div>
       <nav className="flex-1 overflow-y-auto py-4 no-scrollbar">

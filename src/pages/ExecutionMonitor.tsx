@@ -294,20 +294,6 @@ export const ExecutionMonitor = () => {
                        </div>
                     </div>
                  )}
-
-                 {/* JSON Payload Block */}
-                 <div className="mt-4 ml-24 bg-white/5 rounded-lg p-6 border border-white/10 max-w-lg">
-                    <pre className="text-warning-light">
-{`{
-  "request_id": "req_883210x",
-  "status": "provisioning",
-  "metadata": {
-    "region": "ap-southeast-1",
-    "instance_type": "n2-standard-4"
-  }
-}`}
-                    </pre>
-                 </div>
               </div>
            </div>
 
