@@ -36,10 +36,9 @@ export const Sidebar = () => {
       <div className="h-20 flex items-center justify-center border-b border-white/5">
         <div className="flex items-center justify-center p-2 bg-white rounded-xl m-3 shadow-lg shadow-black/50 border border-white/10 opacity-90 hover:opacity-100 transition-opacity group">
           <img
-            src="/input_file_0.png"
+            src="/logo.png"
             alt="Ruijie"
             className="w-12 h-auto object-contain transition-transform group-hover:scale-105"
-            referrerPolicy="no-referrer"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
               const fallback = document.createElement('div');
