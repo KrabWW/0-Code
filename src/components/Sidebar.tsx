@@ -34,7 +34,7 @@ export const Sidebar = () => {
   return (
     <aside className="w-20 bg-[#0a0a0a] flex flex-col h-screen fixed left-0 top-0 z-50 shadow-2xl shadow-black/50">
       <div className="h-20 flex items-center justify-center border-b border-white/5">
-        <div className="flex items-center justify-center p-2 bg-white rounded-xl m-3 shadow-lg shadow-black/50 border border-white/10 opacity-90 hover:opacity-100 transition-opacity group">
+        <div className="flex items-center justify-center p-2 m-3 group">
           <img
             src="/logo.png"
             alt="Ruijie"
